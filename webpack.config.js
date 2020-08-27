@@ -146,6 +146,10 @@ function createMainConfig(isDev) {
             "main-process": "./main-process.ts"
         },
 
+        node: {
+            __dirname: false,
+        },
+
         output: {
             filename: "[name].js",
             path: path.join(__dirname, "dist")
